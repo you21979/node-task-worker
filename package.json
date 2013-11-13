@@ -1,0 +1,28 @@
+{
+  "author": "Yuki Akiyama <you2197901 [at] gmail.com>",
+  "name": "task-worker",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+  },
+  "readmeFilename": "README.md",
+  "description": "Task to Child Process",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/you21979/node-task-worker.git"
+  },
+  "keywords": [
+    "child process",
+    "multi process",
+    "task"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/you21979/node-task-worker/issues"
+  }
+}
