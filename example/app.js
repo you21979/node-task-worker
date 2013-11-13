@@ -5,7 +5,6 @@ var task = require('..').task;
 var server = http.createServer(function (req, res) {
     var uri = url.parse(req.url).pathname;
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    console.log(uri);
     task.send('req', {uri:uri}, function(param){
         res.end(param.text + '\n');
     });
