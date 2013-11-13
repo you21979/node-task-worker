@@ -1,5 +1,6 @@
 var child = require('../..').child;
 child.on('req', function(param){
+    //console.log('req :%d',process.pid);
     param.text = 'hello ' + param.uri;
     child.send('req', param);
 });

@@ -17,11 +17,11 @@ task.run('./script/worker.js', 8, function(){
     });
 });
 
-task.on('online', function(){
-    console.log('online');
+task.on('online', function(worker){
+    console.log('online :%s', worker.pid);
 });
-task.on('offline', function(){
-    console.log('offline');
+task.on('offline', function(worker){
+    console.log('offline :%s', worker.pid);
 });
 
 task.on('pong', function(param){
