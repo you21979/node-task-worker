@@ -10,7 +10,7 @@ var server = http.createServer(function (req, res) {
     });
 });
 
-task.run('./script/worker.js', 8, function(){
+task.run('./script/worker.js', 2, function(){
     server.listen(1337, function(){
         task.send('ping', {time:process.uptime()});
     });
